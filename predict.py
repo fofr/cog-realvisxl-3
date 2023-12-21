@@ -290,7 +290,7 @@ class Predictor(BasePredictor):
             default="K_EULER",
         ),
         num_inference_steps: int = Input(
-            description="Number of denoising steps", ge=1, le=500, default=50
+            description="Number of denoising steps", ge=1, le=500, default=25
         ),
         guidance_scale: float = Input(
             description="Scale for classifier-free guidance", ge=1, le=50, default=7.5
@@ -321,7 +321,7 @@ class Predictor(BasePredictor):
         ),
         apply_watermark: bool = Input(
             description="Applies a watermark to enable determining if an image is generated in downstream applications. If you have other provisions for generating or deploying images safely, you can use this to disable watermarking.",
-            default=True,
+            default=False,
         ),
         lora_scale: float = Input(
             description="LoRA additive scale. Only applicable on trained models.",
