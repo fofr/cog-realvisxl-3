@@ -36,7 +36,7 @@ SDXL_MODEL_CACHE = "./sdxl-cache"
 REFINER_MODEL_CACHE = "./refiner-cache"
 SAFETY_CACHE = "./safety-cache"
 FEATURE_EXTRACTOR = "./feature-extractor"
-SDXL_URL = "https://weights.replicate.delivery/default/sdxl/sdxl-vae-upcast-fix.tar"
+SDXL_URL = "https://weights.replicate.delivery/default/RealVisXL/RealVisXL_V3.0.tar"
 REFINER_URL = (
     "https://weights.replicate.delivery/default/sdxl/refiner-no-vae-no-encoder-1.0.tar"
 )
@@ -345,7 +345,7 @@ class Predictor(BasePredictor):
 
         if replicate_weights:
             self.load_trained_weights(replicate_weights, self.txt2img_pipe)
-        
+
         # OOMs can leave vae in bad state
         if self.txt2img_pipe.vae.dtype == torch.float32:
             self.txt2img_pipe.vae.to(dtype=torch.float16)
