@@ -1,8 +1,12 @@
-# Cog-SDXL
+# cog-realvisxl-3
 
-[![Replicate demo and cloud API](https://replicate.com/stability-ai/sdxl/badge)](https://replicate.com/stability-ai/sdxl)
+[![Replicate demo and cloud API](https://replicate.com/fofr/realvisxl-v3/badge)](https://replicate.com/fofr/realvisxl-v3)
 
-This is an implementation of Stability AI's [SDXL](https://github.com/Stability-AI/generative-models) as a [Cog](https://github.com/replicate/cog) model.
+Run on Replicate:
+https://replicate.com/fofr/realvisxl-v3
+
+An SDXL full model tune aimed at photorealism:
+https://huggingface.co/SG161222/RealVisXL_V3.0
 
 ## Development
 
