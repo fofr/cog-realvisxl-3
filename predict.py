@@ -272,11 +272,11 @@ class Predictor(BasePredictor):
         ),
         width: int = Input(
             description="Width of output image",
-            default=1024,
+            default=768,
         ),
         height: int = Input(
             description="Height of output image",
-            default=1024,
+            default=768,
         ),
         num_outputs: int = Input(
             description="Number of images to output.",
